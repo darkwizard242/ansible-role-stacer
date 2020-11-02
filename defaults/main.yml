@@ -1,0 +1,8 @@
+---
+# defaults file for stacer
+
+stacer_app: stacer
+stacer_app_desired_state: present
+stacer_ubuntu_repo: 'ppa:oguzhaninan/stacer'
+stacer_ubuntu_repo_desired_state: present
+stacer_ubuntu_repo_filename: stacer
