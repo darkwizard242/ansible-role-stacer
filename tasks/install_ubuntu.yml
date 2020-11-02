@@ -1,0 +1,19 @@
+---
+# tasks file for stacer - Ubuntu OS
+
+- name: Ubuntu OS | Adding repository {{ stacer_ubuntu_repo }}
+  apt_repository:
+    repo: "{{ stacer_ubuntu_repo }}"
+    state: "{{ stacer_ubuntu_repo_desired_state }}"
+    filename: "{{ stacer_ubuntu_repo_filename }}"
+    codename: "{{ ansible_lsb['codename'] }}"
+    update_cache: yes
+  when:
+    - ansible_distribution_version == "18.04" or ansible_distribution_version == "16.04"
+
+- name: Ubuntu OS | Installing {{ stacer_app }}
+  apt:
+    name: "{{ stacer_app }}"
+    state: "{{ stacer_app_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
