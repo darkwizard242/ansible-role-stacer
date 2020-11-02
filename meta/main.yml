@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  role_name: stacer
+  author: Ali Muhammad
+  description: Installs/uninstalls 'stacer' package for linux system optimizing and monitoring.
+  company: none
+  license: MIT
+  min_ansible_version: 2.8
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+
+  galaxy_tags:
+    - stacer
+    - optimizer
+    - monitoring
+    - linux
+    - system
+    - os
+
+dependencies: []
