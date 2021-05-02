@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: stacer
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs/uninstalls 'stacer' package for linux system optimizing and monitoring.
   company: none
   license: MIT
