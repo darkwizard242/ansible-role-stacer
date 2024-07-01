@@ -13,7 +13,6 @@ galaxy_info:
         - noble
         - jammy
         - focal
-        - bionic
 
   galaxy_tags:
     - stacer
